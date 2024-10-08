@@ -45,6 +45,19 @@ body {
     animation: fadeIn 2s ease;
 }
 
+/* Add the new CSS for the letter border */
+#letterScreen {
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 20px; /* Space inside the border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    background-color: white; /* Background for contrast */
+    max-width: 600px; /* Optional: limits the width of the letter */
+    margin: 20px auto; /* Center the letter horizontally */
+    text-align: left; /* Aligns text to the left */
+    color: black; /* Text color */
+}
+
 /* Keyframes */
 @keyframes popUp {
     0% {
@@ -65,3 +78,4 @@ body {
         opacity: 1;
     }
 }
+
