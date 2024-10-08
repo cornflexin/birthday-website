@@ -1,6 +1,4 @@
-// JavaScript to handle interactions
 
-// Get elements by their IDs
 const welcomeScreen = document.getElementById('welcomeScreen');
 const birthdayScreen = document.getElementById('birthdayScreen');
 const birthdayMessage = document.getElementById('birthdayMessage');
@@ -16,28 +14,28 @@ const errorMessage2 = document.getElementById('errorMessage2');
 
 const openLetterButton = document.getElementById('openLetter');
 
-// Step 1: Are you Daniel?
+
 yesDaniel.addEventListener('click', () => {
-    welcomeScreen.classList.add('hidden'); // Hide welcome screen
-    birthdayScreen.classList.remove('hidden'); // Show birthday question screen
+    welcomeScreen.classList.add('hidden'); 
+    birthdayScreen.classList.remove('hidden'); 
 });
 
 noDaniel.addEventListener('click', () => {
-    errorMessage.classList.remove('hidden'); // Show error message for "no"
+    errorMessage.classList.remove('hidden'); 
 });
 
-// Step 2: Is it your birthday?
+
 yesBirthday.addEventListener('click', () => {
-    birthdayScreen.classList.add('hidden'); // Hide birthday question screen
-    birthdayMessage.classList.remove('hidden'); // Show birthday message
+    birthdayScreen.classList.add('hidden'); 
+    birthdayMessage.classList.remove('hidden'); 
 });
 
 noBirthday.addEventListener('click', () => {
-    errorMessage2.classList.remove('hidden'); // Show error message for "no"
+    errorMessage2.classList.remove('hidden');
 });
 
-// Step 3: Display Birthday Letter when "Open Letter" button is clicked
+
 openLetterButton.addEventListener('click', () => {
-    birthdayMessage.classList.add('hidden'); // Hide birthday message
-    letterScreen.classList.remove('hidden'); // Show the letter screen
+    birthdayMessage.classList.add('hidden'); 
+    letterScreen.classList.remove('hidden');
 });
