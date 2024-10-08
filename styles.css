@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: #FF6961;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
+
+.animation-pop {
+    animation: popUp 1.5s ease;
+}
+
+.letter-animation {
+    animation: fadeIn 2s ease;
+}
+
+/* Keyframes */
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
